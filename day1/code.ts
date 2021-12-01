@@ -4,17 +4,17 @@ const measurements: number[] = input.split("\n").map((it) => Number(it));
 
 const getNumberOfItemsLargerThanPreviousItem = (input: number[]): number => {
   let last = 0;
-  let i = -1;
+  let counter = -1;
 
   input.forEach((measurement) => {
     if (measurement > last) {
-      i++;
+      counter++;
     }
 
     last = measurement;
   });
 
-  return i;
+  return counter;
 };
 
 // ##########
@@ -27,6 +27,17 @@ export const part1 = () => getNumberOfItemsLargerThanPreviousItem(measurements);
 // ##########
 const sumThreeMeasurements = (input: number[]): number[] => {
   let windows = [];
+
+  // 199  A
+  // 200  A B
+  // 208  A B C
+  // 210    B C D
+  // 200  E   C D
+  // 207  E F   D
+  // 240  E F G
+  // 269    F G H
+  // 260      G H
+  // 263        H
   for (let i = 0; i < input.length - 2; i++) {
     windows.push(input[i] + input[i + 1] + input[i + 2]);
   }
