@@ -1,0 +1,30 @@
+{
+  "name": "aoc-2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node runner.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstolwijk/aoc-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jstolwijk/aoc-2021/issues"
+  },
+  "homepage": "https://github.com/jstolwijk/aoc-2021#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "@types/yargs": "^17.0.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "cfonts": "^2.10.0",
+    "yargs": "^17.3.0"
+  }
+}
