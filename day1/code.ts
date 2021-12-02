@@ -26,7 +26,7 @@ export const part1 = () => getNumberOfItemsLargerThanPreviousItem(measurements);
 // # PART 2 #
 // ##########
 const sumThreeMeasurements = (input: number[]): number[] => {
-  let windows = [];
+  let xs = [];
 
   // 199  A
   // 200  A B
@@ -39,10 +39,10 @@ const sumThreeMeasurements = (input: number[]): number[] => {
   // 260      G H
   // 263        H
   for (let i = 0; i < input.length - 2; i++) {
-    windows.push(input[i] + input[i + 1] + input[i + 2]);
+    xs.push(input[i] + input[i + 1] + input[i + 2]);
   }
 
-  return windows;
+  return xs;
 };
 
 export const part2 = () =>
