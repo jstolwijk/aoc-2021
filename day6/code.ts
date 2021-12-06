@@ -1,3 +1,5 @@
+import { sum } from "../common/sum";
+
 const input: string = require("fs").readFileSync("./day6/input.txt").toString();
 
 // ##########
@@ -58,5 +60,5 @@ export const part2 = () => {
     day++;
   }
 
-  return groupedFish.reduce((acc, curr) => acc + curr, 0);
+  return sum(groupedFish);
 };
